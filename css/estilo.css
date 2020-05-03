@@ -1,0 +1,543 @@
+* {
+    font-family: "Equinox Regular", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#intro_bg {
+    position: absolute;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+#intro_seta {
+    position: absolute;
+    top: 77vh;
+    left: 88vw;
+    cursor:pointer;
+}
+#video{
+    position:absolute;
+    top:5vh;
+    left:11vw;
+    z-index:2000;
+}
+
+#menu {
+
+    background-image: url("../assets/imgs/img/pagprincipal/background.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#menu_titulo {
+    position: absolute;
+    top: 50vh;
+    left: 36.5vw;
+    z-index: 100;
+    width: 26.5vw;
+}
+
+#btn_menu_missao {
+    position: absolute;
+    top: 59.6vh;
+    left: 11.7vw;
+    z-index: 100;
+    width: 15vw;
+    cursor: pointer;
+}
+
+#btn_menu_oficina {
+    position: absolute;
+    top: 13vh;
+    left: 21vw;
+    z-index: 100;
+    width: 25vw;
+    cursor: pointer;
+}
+
+#btn_menu_jogar {
+    position: absolute;
+    top: 18vh;
+    left: 54vw;
+    z-index: 100;
+    width: 30vw;
+    cursor: pointer;
+}
+
+#btn_menu_creditos {
+    position: absolute;
+    top: 45.5vh;
+    left: 75vw;
+    z-index: 100;
+    width: 20vw;
+    cursor: pointer;
+}
+
+#fundo-fundo {
+
+    background-image: url("../assets/imgs/img/background/planetas.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+
+}
+
+#fundo-medio1 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+}
+
+#fundo-medio2 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 100vw;
+    top: 0;
+    z-index: 2;
+
+}
+
+#fundo-proximo1 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+#fundo-proximo2 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 100vw;
+    top: 0;
+    z-index: 50;
+}
+
+#jogador {
+    z-index: 100;
+    height: 12vh;
+    position: absolute;
+
+}
+
+#cometa {
+    position: absolute;
+    z-index: 100;
+    width: 15vw;
+}
+
+#cometa2 {
+    position: absolute;
+    z-index: 100;
+    width: 15vw;
+}
+
+#letra {
+
+    position: absolute;
+    z-index: 99;
+    width: 3.5vw;
+
+}
+
+#imagem_letras {
+
+    position: absolute;
+    top: 2vh;
+
+    background-color: grey;
+    z-index: 100;
+    border-radius: 25px;
+}
+
+#vidas {
+    position: absolute;
+    height: 10vh;
+    z-index: 100;
+}
+
+#conquista {
+    position: absolute;
+    width: 17.57vw;
+    z-index: 120;
+}
+
+#pontos {
+    padding: 0 1vw;
+    font-size: 6vmin;
+    position: absolute;
+    top: 2vh;
+    left: 75vw;
+    color: white;
+    border: solid white 4px;
+    border-radius: 3vmin;
+    z-index: 102;
+}
+
+#recorde {
+    padding: 0 1vw;
+    font-size: 3vmin;
+    position: absolute;
+    top: 2vh;
+    left: 50vw;
+    color: white;
+    border: solid white 4px;
+    border-radius: 2vmin;
+    z-index: 102;
+}
+
+#escolherET {
+    background-image: url("../assets/imgs/img/escolherET/background.png");
+    height: 100vh;
+    width: 101vw;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#et1 {
+    position: absolute;
+    width: 17vw;
+    top: 37vh;
+    left: 28vw;
+    cursor: pointer;
+}
+
+#et2 {
+    position: absolute;
+    width: 20vw;
+    top: 37vh;
+    left: 55vw;
+    cursor: pointer;
+}
+
+#inserirnome {
+    background-image: url("../assets/imgs/img/inserirnome/texto.png");
+    height: 100vh;
+    width: 101vw;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#nome {
+    position: absolute;
+    left: 35vw;
+    top: 50vh;
+    width: 30vw;
+    height: 10vh;
+    z-index: 10;
+    border-radius: 3vmin;
+    border: 4px solid #555;
+    background-color: lightgray;
+    padding: 2vmin;
+    font-size: 4vmin;
+    opacity: 0.8;
+}
+
+#setainserir {
+    position: absolute;
+    left: 75vw;
+    top: 73vh;
+    width: 4.5vw;
+    cursor: pointer;
+}
+
+#erro_nome {
+    position: absolute;
+    top: 60vh;
+    left: 41vw;
+    color: #fb8951;
+}
+
+#perdeu_base {
+    position: absolute;
+    top: 27vh;
+    left: 32vw;
+    height: 45vh;
+    z-index: 1000;
+}
+
+#perdeu_nome {
+    position: absolute;
+    top: 48vh;
+    left: 35.5vw;
+    font-size: 4vmin;
+    color: white;
+    z-index: 1001;
+
+}
+
+#perdeu_pontos {
+    position: absolute;
+    top: 53vh;
+    left: 35.5vw;
+    font-size: 4vmin;
+    color: white;
+    z-index: 1001;
+}
+
+#reiniciar {
+    position: absolute;
+    top: 60vh;
+    left: 44vw;
+    width: 4vw;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+#sair {
+    position: absolute;
+    top: 60vh;
+    left: 55vw;
+    z-index: 1000;
+    width: 4vw;
+    cursor: pointer;
+}
+
+#pause_bg {
+    position: absolute;
+    top: 22vh;
+    left: 28.5vw;
+    height: 60vh;
+    z-index: 1000;
+}
+
+#pause_sound {
+    position: absolute;
+    top: 42vh;
+    left: 48.5vw;
+    width: 2.5vw;
+    z-index: 1005;
+    cursor: pointer;
+}
+
+#pause_cont {
+    position: absolute;
+    top: 50vh;
+    left: 39vw;
+    width: 22vw;
+    z-index: 1005;
+    cursor: pointer;
+}
+
+#pause_end {
+    position: absolute;
+    top: 65vh;
+    left: 39vw;
+    width: 22vw;
+    z-index: 1005;
+    cursor: pointer;
+}
+
+#creditos {
+    background-image: url("../assets/imgs/img/creditos/texto.png");
+    height: 100vh;
+    width: 101vw;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#close_creditos {
+    position: absolute;
+    top: 8vh;
+    left: 84vw;
+    cursor: pointer;
+}
+
+#oficina {
+    background-image: url("../assets/imgs/img/oficina/oficina.png");
+    height: 100vh;
+    width: 101vw;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#naveSopacidade {
+    position: absolute;
+    top: 50vh;
+    left: 80vw;
+}
+
+#par1 {
+    position: absolute;
+    top: 49.75vh;
+    left: 80.4vw;
+    visibility: hidden;
+}
+
+#par2 {
+    position: absolute;
+    top: 72.5vh;
+    left: 80.1vw;
+    visibility: hidden;
+}
+
+#par3 {
+    position: absolute;
+    top: 52vh;
+    left: 81.3vw;
+    visibility: hidden;
+}
+
+#par4 {
+    position: absolute;
+    top: 50vh;
+    left: 82vw;
+    visibility: hidden;
+}
+
+#par5 {
+    position: absolute;
+    top: 66.5vh;
+    left: 81vw;
+    visibility: hidden;
+}
+
+#par6 {
+    position: absolute;
+    top: 58vh;
+    left: 82vw;
+    visibility: hidden;
+}
+
+#partes {
+    position: absolute;
+    top: 30vh;
+    left: 20vw;
+}
+
+#parte {
+    position: absolute;
+    left: 6vw;
+    top: 10vh;
+    cursor: pointer;
+}
+
+#setadir {
+    position: absolute;
+    top: 35vh;
+    left: 20.5vw;
+    cursor: pointer;
+}
+
+#setaesq {
+    position: absolute;
+    top: 35vh;
+    cursor: pointer;
+}
+
+#instrucoes {
+    background-image: url("../assets/imgs/img/instrucoes/total.png");
+    height: 100vh;
+    width: 101vw;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#inst_comandos {
+    position: absolute;
+    top: 33vh;
+    left: 20vw;
+    width: 8vw;
+}
+
+#inst_cometa {
+    position: absolute;
+    top: 52.5vh;
+    left: 20vw;
+    width: 8vw;
+}
+
+#inst_letra {
+    position: absolute;
+    top: 75vh;
+    left: 20vw;
+    width: 8vw;
+}
+
+#close_inst {
+    position: absolute;
+    top: 8vh;
+    left: 84vw;
+    cursor: pointer;
+}
+
+#som_inst {
+    position: absolute;
+    top: 26vh;
+    left: 50vw;
+    width: 2.5vw;
+
+    cursor: pointer;
+
+}
+
+#layer_par1, #layer_par2, #layer_par3, #layer_par4, #layer_par5, #layer_par6 {
+    position: absolute;
+    top: 28vh;
+    left: 15.75vw;
+    width: 35vw;
+    z-index: 105;
+    visibility: hidden;
+}
+
+#close_conq_layer {
+    position: absolute;
+    top: 29.5vh;
+    left: 47vw;
+    z-index: 1000;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#som_conq {
+    position: absolute;
+    top: 47.5vh;
+    left: 16.25vw;
+    width: 2vw;
+    z-index: 1001;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#back {
+    position: absolute;
+    top: 1vh;
+    left: 0.5vw;
+    cursor: pointer;
+}
+#palavra-estado{
+    font-size: 1.5rem;
+    padding:1rem;
+    position:absolute;
+    top:2vh;;
+
+}
